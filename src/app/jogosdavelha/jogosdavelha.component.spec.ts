@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { JogosdavelhaComponent } from './jogosdavelha.component';
+import { JogosdavelhaService } from './shared'
 
 describe('JogosdavelhaComponent', () => {
   let component: JogosdavelhaComponent;
@@ -8,7 +9,10 @@ describe('JogosdavelhaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ JogosdavelhaComponent ]
+      declarations: [ JogosdavelhaComponent ],
+      providers:[
+        JogosdavelhaService
+      ]
     })
     .compileComponents();
 
